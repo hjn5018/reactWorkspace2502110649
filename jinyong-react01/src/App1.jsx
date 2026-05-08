@@ -22,11 +22,11 @@ function App() {
     <Register1 />
     <hr />
     
-    <Register2 />
+    {/* <Register2 />
     <hr />
 
     <Register3 />
-    <hr />
+    <hr /> */}
     </>
   );
 }
