@@ -49,11 +49,11 @@ function test2([a, b, c]) {
 }
 test2(array);
 
-function test3(a, ...b) {
+function test3(a, ...b) { // Rest parameter
     console.log(a); // 10
     console.log(b); // [ 65, 1 ]
 }
-test3(...array);
+test3(...array); // Spread syntax
 
 console.log()
 console.log()
