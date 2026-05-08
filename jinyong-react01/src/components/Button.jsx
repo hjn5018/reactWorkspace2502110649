@@ -55,6 +55,7 @@
 function Button({ text, color }) {
   return <button style={{ color: color }}>{text}!!</button>;
 }
+
 // function Button({ text, color }) {
 //   return <button style={{ color }}>{text}!!</button>;
 // }
