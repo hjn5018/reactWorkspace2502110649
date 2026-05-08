@@ -5,6 +5,8 @@
 //         </>
 //     )
 // }
+
+
 // let Button = ({text}) => {
 //     return (
 //         <>
@@ -12,6 +14,8 @@
 //         </>
 //     )
 // }
+
+
 // let Button = (props) => {
 //     return (
 //         <>
@@ -21,6 +25,8 @@
 //         </>
 //     )
 // }
+
+
 // let Button = ({text, children}) => {
 //     return (
 //         <>
@@ -28,6 +34,8 @@
 //         </>
 //     )
 // }
+
+
 // let Button = ({text, img}) => {
 //     return (
 //         <>
@@ -38,15 +46,20 @@
 //     )
 // }
 
+
 // function Button(props) {
 //   return <button style={{ color: props.color }}>{props.text}</button>;
 // }
+
+
 function Button({ text, color }) {
   return <button style={{ color: color }}>{text}!!</button>;
 }
 // function Button({ text, color }) {
 //   return <button style={{ color }}>{text}!!</button>;
 // }
+
+
 export default Button;
 
 // let Button = (props) => {

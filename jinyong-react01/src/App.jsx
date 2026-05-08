@@ -9,9 +9,11 @@ function App() {
     <>
       <Button text="메" img={"a.jpg"}/>
       <Button text={"카페"}/>
+      
       <Button>
         <Header/>
       </Button>
+
       <Button>
         <h1>children props!!</h1>
       </Button>
