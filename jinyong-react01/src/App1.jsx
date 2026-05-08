@@ -1,6 +1,7 @@
 import Counter from "./components/Counter";
 import Light from "./components/Light";
 import Tabs from "./components/Tabs"
+import Register from "./components/Register"
 import Register1 from "./components/Register1"
 import Register2 from "./components/Register2"
 import Register3 from "./components/Register3"
@@ -19,10 +20,13 @@ function App() {
     <Tabs/>
     <hr />
 
-    <Register1 />
+    <Register />
+    <hr />
+
+    {/* <Register1 />
     <hr />
     
-    {/* <Register2 />
+    <Register2 />
     <hr />
 
     <Register3 />
