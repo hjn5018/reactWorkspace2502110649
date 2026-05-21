@@ -1,17 +1,13 @@
-const Controller = ({count}) => {
+const Controller = ({onClickBtn}) => {
 
     return (
         <>
-        <div>컨트롤러</div>
-
-        <h1>{count}</h1>
-        
-        <button>-1</button>
-        <button>-10</button>
-        <button>-100</button>
-        <button>+100</button>
-        <button>+10</button>
-        <button>+1</button>
+        <button onClick={() => onClickBtn(-1)}>-1</button>
+        <button onClick={() => onClickBtn(-10)}>-10</button>
+        <button onClick={() => onClickBtn(-100)}>-100</button>
+        <button onClick={() => onClickBtn(+100)}>+100</button>
+        <button onClick={() => onClickBtn(+10)}>+10</button>
+        <button onClick={() => onClickBtn(+1)}>+1</button>
         </>
     );
 };
