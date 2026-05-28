@@ -11,7 +11,7 @@ function SimpleCounter() {
   let refObj = useRef(false);
 
   useEffect(()=>{
-    console.log("mount!");
+    console.log("SimpleCounter mount");
   }, []); 
   
   useEffect(()=>{
@@ -34,13 +34,11 @@ function SimpleCounter() {
       <input value={input} onChange={(e)=>{setInput(e.target.value);}}/>{input}
     </section>
 
-    {/* <section style={{backgroundColor: "#eeeeee", width: 600, height: 150, margin: 10, padding: 20}}> */}
     <section >
       <Viewer count={count}/>
       {count%2===0 ? <Even/> : null}
     </section>
 
-    {/* <section style={{backgroundColor: "#eeeeee", width: 600, height: 150, margin: 10, padding: 20}}> */}
     <section>
       <Controller onClickBtn={onClickBtn}/>
     </section>
