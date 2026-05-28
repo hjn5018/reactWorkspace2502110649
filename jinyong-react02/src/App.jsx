@@ -1,48 +1,24 @@
-import { useState, useEffect, useRef } from 'react'
-import Controller from './sub/Controller'
-import Viewer from './sub/Viewer'
-import Even from './sub/Even';
+import {Routes, Route, Link} from "react-router-dom"
+import Home from "./pages/Home"
+import SimpleCounter from "./pages/SimpleCounter"
+import UserList from "./pages/UserList"
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [input, setInput] = useState("");
-
-  let refObj = useRef(false);
-
-  useEffect(()=>{
-    console.log("mount!");
-  }, []); 
-  
-  useEffect(()=>{
-    if (!refObj.current) {
-      refObj.current = true;
-      return;
-    }
-    console.log(`count값: ${count}`);
-  }, [count]); 
-
-  const onClickBtn = (num) => {
-    setCount(count + num);
-  };
-
   return (
     <>
-    <h1>Simple Counter</h1>
-
-    <section>
-      <input value={input} onChange={(e)=>{setInput(e.target.value);}}/>{input}
-    </section>
-
-    {/* <section style={{backgroundColor: "#eeeeee", width: 600, height: 150, margin: 10, padding: 20}}> */}
-    <section >
-      <Viewer count={count}/>
-      {count%2===0 ? <Even/> : null}
-    </section>
-
-    {/* <section style={{backgroundColor: "#eeeeee", width: 600, height: 150, margin: 10, padding: 20}}> */}
-    <section>
-      <Controller onClickBtn={onClickBtn}/>
-    </section>
+    <Link to="/">[홈]</Link>
+    <Link to="/counter">[간단 카운터]</Link>
+    <Link to="user">[사용자 목록]</Link>
+    <hr />
+    {/* a태그는 새로고침된다. */}
+    <a href="/">[홈]</a> 
+    <a href="/counter">[간단 카운터]</a>
+    <a href="/user">[사용장 목록]</a>
+    <Routes>
+      <Route path={"/"} element={<Home/>} />
+      <Route path={"/counter"} element={<SimpleCounter/>} />
+      <Route path={"/user"} element={<UserList/>} />
+    </Routes>
     </>
   )
 }
