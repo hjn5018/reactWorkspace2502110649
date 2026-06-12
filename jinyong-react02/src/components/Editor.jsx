@@ -1,3 +1,5 @@
+import "./Editor.css"
+
 function Editor() {
 
     return (

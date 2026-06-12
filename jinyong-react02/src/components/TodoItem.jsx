@@ -1,3 +1,5 @@
+import "./TodoItem.css"
+
 function TodoItem({id, isDone, content, date}) {
 
     return (
