@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react'
 import Controller from '../sub/Controller'
 import Viewer from '../sub/Viewer'
 import Even from '../sub/Even';
-import UserList from './UserList';
 
 function SimpleCounter() {
   const [count, setCount] = useState(0);
